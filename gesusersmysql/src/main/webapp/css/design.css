@@ -1,0 +1,309 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+header, nav, section, footer
+{
+	position: absolute;
+	width: 100%;
+}
+header, nav, footer
+{
+	color: white;
+	text-align: center;
+	background-color: black;/*#004382;*/
+}
+nav, footer
+{
+	border: solid white;
+	border-width: 0px 2px 0px 2px;
+}
+header
+{
+	text-transform: uppercase;
+	padding: 10px 0px;
+	font-family: "Agency FB";
+	left: 0px;
+	top: 0px;
+	height: 11%;
+	font-size: 2.5em;
+	border: solid 2px white;
+}
+nav
+{
+	left: 0px;
+	top: 11%;
+	height: 5%;
+
+}
+nav ul
+{
+	margin: 0px;
+	height: 100%;
+}
+nav ul li 
+{
+	display: inline-block;
+	padding: 5px;
+	height: 100%;
+	border-left: solid 2px white;
+}
+nav ul li:last-child 
+{
+	border-right: solid 2px white;
+}
+nav li a
+{
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+}
+section
+{
+	left: 0px;
+	top: 16%;
+	height: 79%;
+	margin: 0px;
+	padding: 0px 5px;
+	text-align: justify;
+	overflow: auto;
+}
+footer
+{
+	left: 0px;
+	font-size: 1.2em;
+	padding-top: 5px;
+	top: 95%;
+	height: 5%;
+}
+#titre-principal
+{
+	margin: 5px 0px;
+	text-align: center;
+	font-size: 2em;
+	font-family: "Agency FB";
+}
+table tr:first-child
+{
+	background-color: black;/*#004382;*/
+	color: white;
+	text-align: center;
+	border: solid 2px black;/*#004382;*/
+}
+table, th, td
+{
+	border: solid 1px black;/*#004382;*/
+	padding: 10px;
+}
+table
+{
+	width: fit-content;
+	margin: auto;
+	border-collapse: collapse;
+}
+form.main
+{
+	width: 60%;
+	margin: auto;
+	border: double 3px;
+	margin-bottom: 5px;
+}
+.formItem
+{
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+.formItem label
+{
+	display: inline-block;
+	margin: 10px;
+	font-size: 1.2em;
+}
+.formItem input[type=text],.formItem input[type=password], .formItem textarea
+{
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+.formItem input
+{
+	height: 30px;
+}
+.formItem input[type=submit]
+{
+	color: white;
+	font-size: 1.2em;
+	border: double 3px grey;
+	background-color: black;#004382;
+}
+.formItem textarea
+{
+	height: 200px;
+}
+#errorBox
+{
+	width: fit-content;
+	margin: auto;
+	color: #f92372;
+	text-align: center;
+}
+#errorBox h1
+{
+	color: red;
+	font-weight: normal;
+}
+#errorBox li
+{
+	text-align: justify;
+}
+.valide
+{
+	border: solid green 2px;
+}
+.invalide
+{
+	border: solid red 2px;
+}
+/* Pour les liens de pagination ajouté par Laravel */
+#navbar
+{
+	width: fit-content;
+	margin: 10px auto;
+}
+#navbar form
+{
+	display: inline;
+}
+.pagination
+{
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+	border-radius: .25rem;
+}
+.pagination li
+{
+	display: list-item;
+}
+.page-item.active .page-link 
+{
+    z-index: 3;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.page-link 
+{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+/* Pour la description d'un projet */
+section .sectionItem
+{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border-radius: 20px;
+	text-align: center;
+	border: double 5px black;/*#004382;*/
+}
+/* pour ajouter une bordure juste après le titre */
+section .sectionItem h1:after {
+    content: "";
+    display: block;
+    margin: 0px auto;
+    width: 10%;
+    padding: 10px;
+    border-bottom: solid 2px grey;
+}
+section .sectionItem h1
+{
+	font-size: 2em;
+	font-family: "Agency FB";
+}
+section .sectionItem h2
+{
+	font-size: 0.9em;
+	font-family: "Comic Sans MS";
+}
+p
+{
+	text-align: justify;
+	line-height: 1.5;
+	/*white-space: pre-wrap;*/
+}
+.action-bar
+{
+	padding: 10px;
+	text-align: center;
+}
+.button
+{
+	display: inline-block;
+    background: #2f4f4f;/*#35363a;*//*#2965d1;*/
+    height: fit-content;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 5px;
+    font-family: Arial;
+    border: none;
+}
+form.inline
+{
+	display: inline;
+}
+.alert
+{
+	position: relative;
+    padding: .75rem 1.25rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-success
+{
+	color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.alert-danger
+{
+	color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+#control
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding-right: 5px;
+	color: blue;
+	text-decoration: underline;
+}
+#control:hover
+{
+	cursor: pointer;
+	color: red;
+	text-decoration: none;
+}
